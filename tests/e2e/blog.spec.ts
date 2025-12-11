@@ -15,7 +15,11 @@ test.describe('Blog', () => {
     });
 
     await test.step('Kiểm tra có bài Sample Blog Post', async () => {
-      const samplePostLink = page.getByRole('link', { name: /Sample Blog Post/i });
+      // Tránh strict-mode violation do link xuất hiện cả ở sidebar và list bài viết
+      const samplePostLink = page
+        .locator('main')
+        .getByRole('article')
+        .getByRole('link', { name: /Sample Blog Post/i });
       await expect(samplePostLink).toBeVisible();
       await page.screenshot({ path: `test-results/${testName}-3-sample-post-visible.png`, fullPage: true });
     });
@@ -30,7 +34,11 @@ test.describe('Blog', () => {
     });
 
     await test.step('Click bài Sample Blog Post', async () => {
-      const samplePostLink = page.getByRole('link', { name: /Sample Blog Post/i });
+      // Tránh strict-mode violation do link xuất hiện cả ở sidebar và list bài viết
+      const samplePostLink = page
+        .locator('main')
+        .getByRole('article')
+        .getByRole('link', { name: /Sample Blog Post/i });
       await expect(samplePostLink).toBeVisible();
       await page.screenshot({ path: `test-results/${testName}-2-link-visible.png`, fullPage: true });
 

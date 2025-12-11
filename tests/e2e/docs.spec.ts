@@ -30,8 +30,10 @@ test.describe('Trang Docs', () => {
     });
     
     await test.step('Kiểm tra có ít nhất một heading hoặc paragraph', async () => {
-      const content = page.locator('h1, h2, h3, p').first();
-      await expect(content).toBeVisible();
+      // Tránh bắt nhầm element hidden trong header/footer; focus vào article content
+      const article = page.locator('main article');
+      await expect(article).toBeVisible();
+      await expect(article.getByRole('heading', { level: 1 })).toBeVisible();
       await page.screenshot({ path: `test-results/${testName}-2-content-visible.png`, fullPage: true });
     });
   });
