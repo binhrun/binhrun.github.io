@@ -40,7 +40,8 @@ export default defineConfig({
   webServer: {
     command: 'yarn start',
     url: 'http://localhost:3000',
-    reuseExistingServer: !process.env.CI,
+    // Luôn reuse nếu đã có server chạy (Cursor/terminal thường đã bật `yarn start`)
+    reuseExistingServer: true,
     timeout: 120 * 1000,
   },
 });
