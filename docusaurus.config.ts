@@ -133,7 +133,10 @@ const config: Config = {
           showLastUpdateTime: true,
           sidebarPath: require.resolve("./sidebars.js"),
         },
-        blog: false,
+        blog: {
+          path: "blog",
+          showReadingTime: true,
+        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
