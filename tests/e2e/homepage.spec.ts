@@ -30,7 +30,8 @@ test.describe('Trang chủ', () => {
     });
     
     await test.step('Kiểm tra description', async () => {
-      const description = page.getByText(/Starting from scratch doesn't always make sense/i);
+      // Tránh fail do dấu nháy cong/quote khác nhau (doesn't vs doesn’t)
+      const description = page.getByText(/Starting from scratch/i);
       await expect(description).toBeVisible();
       await page.screenshot({ path: `test-results/${testName}-3-description.png`, fullPage: true });
     });

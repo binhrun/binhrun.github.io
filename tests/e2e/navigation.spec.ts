@@ -35,7 +35,7 @@ test.describe('Navigation', () => {
     });
     
     await test.step('Kiểm tra sidebar có tồn tại', async () => {
-      const sidebar = page.locator('aside, [class*="sidebar"], [class*="menu"]').first();
+      const sidebar = page.getByRole('navigation', { name: /Docs sidebar/i });
       await expect(sidebar).toBeVisible();
       await page.screenshot({ path: `test-results/${testName}-2-sidebar.png`, fullPage: true });
     });
@@ -49,20 +49,14 @@ test.describe('Navigation', () => {
       await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
     });
     
-    await test.step('Tìm link đến recipes', async () => {
-      const recipesLink = page.getByRole('link', { name: /recipes/i }).first();
-      
-      if (await recipesLink.isVisible()) {
-        await page.screenshot({ path: `test-results/${testName}-2-recipes-link-found.png`, fullPage: true });
-        
-        await test.step('Click link và kiểm tra navigation', async () => {
-          await recipesLink.click();
-          await expect(page).toHaveURL(/.*\/docs\/recipes/);
-          await page.screenshot({ path: `test-results/${testName}-3-after-click.png`, fullPage: true });
-        });
-      } else {
-        await page.screenshot({ path: `test-results/${testName}-2-recipes-link-not-found.png`, fullPage: true });
-      }
+    await test.step('Click "Next Sample Doc" để vào trang recipe mẫu', async () => {
+      const nextSample = page.getByRole('link', { name: /Next.*Sample Doc/i });
+      await expect(nextSample).toBeVisible();
+      await page.screenshot({ path: `test-results/${testName}-2-next-visible.png`, fullPage: true });
+
+      await nextSample.click();
+      await expect(page).toHaveURL(/.*\/docs\/recipes\/sample/);
+      await page.screenshot({ path: `test-results/${testName}-3-after-click.png`, fullPage: true });
     });
   });
 
