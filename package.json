@@ -12,7 +12,11 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug"
   },
   "dependencies": {
     "@babel/traverse": "^7.23.2",
@@ -33,9 +37,11 @@
     "@docusaurus/module-type-aliases": "^3.7.0",
     "@docusaurus/tsconfig": "^3.7.0",
     "@docusaurus/types": "^3.7.0",
+    "@playwright/test": "^1.57.0",
     "@types/gtag.js": "^0.0.18",
     "@types/react": "^18.2.55",
     "gitlog": "^4.0.4",
+    "playwright": "^1.57.0",
     "typescript": "~5.2.2"
   },
   "resolutions": {
