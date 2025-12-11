@@ -15,7 +15,9 @@ export default defineConfig({
   /* Số workers tối đa */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter để sử dụng */
-  reporter: 'html',
+  reporter: process.env.CI
+    ? [['list'], ['html', { open: 'never' }]]
+    : [['html', { open: 'never' }], ['list']],
   /* Shared settings cho tất cả projects */
   use: {
     /* Base URL để sử dụng trong actions như `await page.goto('/')`. */
