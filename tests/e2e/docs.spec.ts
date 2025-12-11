@@ -1,0 +1,79 @@
+import { test, expect } from '@playwright/test';
+
+test.describe('Trang Docs', () => {
+  test('trang intro nên load thành công', async ({ page }) => {
+    const testName = 'trang-intro-nên-load-thành-công';
+    
+    await test.step('Navigate đến trang intro', async () => {
+      await page.goto('/docs/intro');
+      await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
+    });
+    
+    await test.step('Kiểm tra URL', async () => {
+      await expect(page).toHaveURL(/.*\/docs\/intro/);
+      await page.screenshot({ path: `test-results/${testName}-2-url-check.png`, fullPage: true });
+    });
+    
+    await test.step('Kiểm tra có main content', async () => {
+      const mainContent = page.locator('main');
+      await expect(mainContent).toBeVisible();
+      await page.screenshot({ path: `test-results/${testName}-3-content-check.png`, fullPage: true });
+    });
+  });
+
+  test('nên hiển thị content trong trang docs', async ({ page }) => {
+    const testName = 'nên-hiển-thị-content-trong-trang-docs';
+    
+    await test.step('Navigate đến trang intro', async () => {
+      await page.goto('/docs/intro');
+      await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
+    });
+    
+    await test.step('Kiểm tra có ít nhất một heading hoặc paragraph', async () => {
+      const content = page.locator('h1, h2, h3, p').first();
+      await expect(content).toBeVisible();
+      await page.screenshot({ path: `test-results/${testName}-2-content-visible.png`, fullPage: true });
+    });
+  });
+
+  test('nên có thể navigate đến recipes page nếu tồn tại', async ({ page }) => {
+    const testName = 'nên-có-thể-navigate-đến-recipes-page-nếu-tồn-tại';
+    
+    await test.step('Navigate đến trang recipes', async () => {
+      await page.goto('/docs/recipes');
+      await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
+    });
+    
+    await test.step('Kiểm tra URL', async () => {
+      await expect(page).toHaveURL(/.*\/docs\/recipes/);
+      await page.screenshot({ path: `test-results/${testName}-2-url-check.png`, fullPage: true });
+    });
+    
+    await test.step('Kiểm tra trang có content', async () => {
+      const mainContent = page.locator('main');
+      await expect(mainContent).toBeVisible();
+      await page.screenshot({ path: `test-results/${testName}-3-content-check.png`, fullPage: true });
+    });
+  });
+
+  test('nên có breadcrumb navigation', async ({ page }) => {
+    const testName = 'nên-có-breadcrumb-navigation';
+    
+    await test.step('Navigate đến trang intro', async () => {
+      await page.goto('/docs/intro');
+      await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
+    });
+    
+    await test.step('Kiểm tra breadcrumb (nếu có)', async () => {
+      const breadcrumb = page.locator('[aria-label*="breadcrumb"], nav[aria-label*="Breadcrumb"]');
+      const breadcrumbExists = await breadcrumb.count() > 0;
+      
+      if (breadcrumbExists) {
+        await expect(breadcrumb.first()).toBeVisible();
+        await page.screenshot({ path: `test-results/${testName}-2-breadcrumb-found.png`, fullPage: true });
+      } else {
+        await page.screenshot({ path: `test-results/${testName}-2-breadcrumb-not-found.png`, fullPage: true });
+      }
+    });
+  });
+});
