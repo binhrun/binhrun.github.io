@@ -25,16 +25,19 @@ export default defineConfig({
     /* Collect trace khi retry test case bị fail */
     trace: 'on-first-retry',
     /* Screenshot configuration
-     * - 'off': Không chụp screenshot
-     * - 'on': Chụp screenshot khi test fail
-     * - 'only-on-failure': Chỉ chụp khi test fail (mặc định)
+     * - 'off': Không chụp screenshot tự động
+     * - 'on': Chụp screenshot ở mỗi step (có thể tốn nhiều dung lượng)
+     * - 'only-on-failure': Chỉ chụp khi test fail (khuyến nghị, tiết kiệm dung lượng)
      */
     screenshot: 'only-on-failure',
     /* Video recording */
     video: 'retain-on-failure',
   },
 
-  /* Cấu hình screenshot paths và options */
+  /* Cấu hình snapshot paths cho visual comparisons
+   * Screenshots được lưu trong test-results/ theo cấu trúc:
+   * test-results/{project}/{test-file}-{test-name}/{screenshot-name}.png
+   */
   snapshotPathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}{ext}',
 
   /* Cấu hình expect cho snapshots */
