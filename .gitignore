@@ -23,3 +23,5 @@ yarn-error.log*
 /test-results/
 /playwright-report/
 /playwright/.cache/
+# ARIA snapshots (có thể commit nếu muốn so sánh)
+# /test-results/aria-snapshots/
