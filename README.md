@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="./static/img/logo.svg" />
-    <img src="./static/img/logo-reversed.svg" alt="Binh.run Logo" width="200" />
+    <source media="(prefers-color-scheme: light)" srcset="./static/img/logo.png" />
+    <img src="./static/img/logo-reversed.png" alt="Binh.run Logo" width="200" />
   </picture>
   <a  href="https://binh.run/">
     <h2 align="center">Binh.run</h2>
