@@ -3,6 +3,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Feedback from '@site/src/components/Feedback';
 import moment from "moment";
 
 import styles from "./index.module.css";
@@ -213,6 +214,7 @@ export default function Home(): JSX.Element {
       <main className={styles.mainContainer}>
         <HomepageFeatures />
         <RecentRuns />
+        <Feedback />
       </main>
     </Layout>
   );
