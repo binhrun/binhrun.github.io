@@ -1,99 +1,116 @@
-# ARIA Snapshots Helper
+# Test Helpers
+
+Các helper functions để hỗ trợ việc viết tests trong Playwright.
+
+## ARIA Snapshots
 
 Helper functions để làm việc với ARIA snapshots trong Playwright tests.
 
-## Lưu ý về phiên bản
+Xem [aria-snapshot.ts](./aria-snapshot.ts) để biết thêm chi tiết về ARIA snapshots.
 
-Tính năng aria-snapshots đầy đủ (`page.snapshot({ mode: 'aria' })`) chỉ có trong Playwright v1.40+. 
+## Screenshots
 
-Hiện tại project đang sử dụng Playwright v1.57.0, nhưng API này có thể cần được enable hoặc chỉ có trong các phiên bản mới hơn. Helper functions này sử dụng cách tiếp cận thay thế để lấy accessibility tree.
+Helper functions để chụp và quản lý screenshots trong tests.
 
-## Cách sử dụng
+### Cách sử dụng
 
-### 1. Lưu ARIA snapshot vào file
+#### 1. Chụp screenshot đơn giản
 
 ```typescript
-import { saveAriaSnapshot } from '../helpers/aria-snapshot';
+import { saveScreenshot } from '../helpers/screenshots';
 
-test('lưu snapshot', async ({ page }) => {
+test('test example', async ({ page }) => {
   await page.goto('/');
-  const filePath = await saveAriaSnapshot(page, 'homepage-snapshot');
-  console.log('Snapshot saved to:', filePath);
+  await saveScreenshot(page, 'test-example', 'navigate');
 });
 ```
 
-### 2. So sánh với snapshot đã lưu
+#### 2. Chụp full page screenshot
 
 ```typescript
-import { compareAriaSnapshot } from '../helpers/aria-snapshot';
+import { saveFullPageScreenshot } from '../helpers/screenshots';
 
-test('so sánh snapshot', async ({ page }) => {
+test('test example', async ({ page }) => {
   await page.goto('/');
-  const comparison = await compareAriaSnapshot(page, 'homepage-snapshot');
-  
-  if (!comparison.match) {
-    console.log('Snapshot khác với bản đã lưu!');
-  }
+  await saveFullPageScreenshot(page, 'test-example', 'homepage');
 });
 ```
 
-### 3. Kiểm tra snapshot chứa các elements cần thiết
+#### 3. Chụp screenshot của một element
 
 ```typescript
-import { checkAriaSnapshotContains } from '../helpers/aria-snapshot';
+import { saveElementScreenshot } from '../helpers/screenshots';
 
-test('kiểm tra elements', async ({ page }) => {
+test('test example', async ({ page }) => {
   await page.goto('/');
-  const result = await checkAriaSnapshotContains(page, [
-    'heading',
-    'link',
-    'button',
-  ]);
-  
-  expect(result.allFound).toBe(true);
-  if (result.missing.length > 0) {
-    console.log('Thiếu elements:', result.missing);
-  }
+  const hero = page.getByRole('heading', { name: /Binh\.run/i });
+  await saveElementScreenshot(hero, 'test-example', 'hero-section');
 });
 ```
 
-## Cấu trúc snapshot
+#### 4. Chụp screenshot với dark mode
 
-Snapshot được lưu dưới dạng JSON với cấu trúc:
+```typescript
+import { saveDarkModeScreenshot } from '../helpers/screenshots';
 
-```json
-{
-  "role": "document",
-  "children": [
-    {
-      "role": "heading",
-      "name": "Binh.run",
-      "tag": "h1"
-    },
-    {
-      "role": "link",
-      "name": "Bắt đầu chạy ngay",
-      "tag": "a"
-    }
-  ]
-}
+test('test example', async ({ page }) => {
+  await page.goto('/');
+  await saveDarkModeScreenshot(page, 'test-example', 'dark-mode');
+});
 ```
 
-## Nâng cấp lên Playwright mới hơn
+#### 5. Chụp screenshot với options tùy chỉnh
 
-Để sử dụng tính năng aria-snapshots chính thức của Playwright:
+```typescript
+import { saveScreenshot } from '../helpers/screenshots';
 
-1. Upgrade Playwright lên phiên bản mới nhất:
-   ```bash
-   yarn upgrade @playwright/test@latest playwright@latest
-   ```
+test('test example', async ({ page }) => {
+  await page.goto('/');
+  await saveScreenshot(page, 'test-example', 'custom', {
+    fullPage: true,
+    quality: 90,
+    animations: 'disabled',
+    waitForFonts: true,
+  });
+});
+```
 
-2. Sử dụng API chính thức:
-   ```typescript
-   const ariaSnapshot = await page.snapshot({ mode: 'aria' });
-   ```
+### Screenshot Options
+
+- `fullPage`: Chụp toàn bộ trang (mặc định: false)
+- `element`: Locator của element cần chụp
+- `quality`: Chất lượng ảnh 0-100 (chỉ cho JPEG)
+- `colorScheme`: 'light' | 'dark' | 'no-preference'
+- `caret`: 'hide' | 'show' - Ẩn/hiện caret trong input
+- `clip`: { x, y, width, height } - Chỉ chụp một vùng cụ thể
+- `animations`: 'disabled' | 'allow' - Tắt/bật animations
+- `waitForFonts`: Đợi fonts load xong
+
+### Screenshot Paths
+
+Tất cả screenshots được lưu trong `test-results/screenshots/` với format:
+```
+test-results/screenshots/{test-name}-{step-name}.png
+```
+
+## Cấu hình Playwright
+
+Screenshots được cấu hình trong `playwright.config.ts`:
+
+```typescript
+use: {
+  screenshot: 'only-on-failure', // Chỉ chụp khi test fail
+  // Hoặc 'on' để chụp mọi lúc, 'off' để tắt
+},
+```
+
+### Screenshot Modes
+
+- `'off'`: Không chụp screenshot tự động
+- `'on'`: Chụp screenshot ở mỗi step
+- `'only-on-failure'`: Chỉ chụp khi test fail (khuyến nghị)
 
 ## Tham khảo
 
-- [Playwright ARIA Snapshots Documentation](https://playwright.dev/docs/aria-snapshots)
-- [Playwright Accessibility Testing](https://playwright.dev/docs/accessibility-testing)
+- [Playwright Screenshots Documentation](https://playwright.dev/docs/screenshots)
+- [Playwright Test Configuration](https://playwright.dev/docs/test-configuration)
