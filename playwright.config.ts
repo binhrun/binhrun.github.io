@@ -30,6 +30,17 @@ export default defineConfig({
     video: 'retain-on-failure',
   },
 
+  /* Cấu hình expect cho snapshots */
+  expect: {
+    /* Thời gian timeout cho assertions */
+    timeout: 5000,
+    /* Cấu hình cho aria snapshots */
+    toHaveAccessibilityTree: {
+      /* So sánh aria tree với snapshot */
+      threshold: 0.2,
+    },
+  },
+
   /* Cấu hình projects cho từng browser */
   projects: [
     {
