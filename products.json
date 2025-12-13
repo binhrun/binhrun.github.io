@@ -2,29 +2,27 @@
   "products": [
     {
       "id": "1",
-      "name": "Bình nước thể thao Pro 750ml",
-      "price": 350000,
-      "originalPrice": 450000,
-      "description": "Bình nước thể thao cao cấp với dung tích 750ml, phù hợp cho mọi hoạt động thể thao. Thiết kế hiện đại, chống rò rỉ và dễ dàng vệ sinh.",
-      "shortDescription": "Bình nước thể thao 750ml, chống rò rỉ, thiết kế hiện đại",
+      "name": "Bình Mềm AONIJIE Trail Running 500ml",
+      "price": 220000,
+      "originalPrice": null,
+      "description": "Bình mềm AONIJIE 500ml với dung tích lớn hơn, lý tưởng cho các chặng chạy dài. Thiết kế mềm dẻo, có thể co lại khi hết nước, tiết kiệm không gian tối đa. Vòi hút đẩy-kéo dễ sử dụng, đảm bảo cung cấp đủ nước cho các hoạt động thể thao kéo dài. Thân bình linh hoạt, nhẹ, không gây cản trở khi di chuyển.",
+      "shortDescription": "Bình mềm AONIJIE 500ml dung tích lớn, phù hợp chạy đường dài",
       "images": [
-        "/img/products/bottle-1-main.svg",
-        "/img/products/bottle-1-side.svg",
-        "/img/products/bottle-1-detail.svg"
+        "/img/products/aonijie-250ml-500ml.png"
       ],
       "specs": {
-        "capacity": "750ml",
-        "material": "Nhựa Tritan không chứa BPA",
-        "weight": "180g",
-        "dimensions": "28cm x 7cm",
-        "color": "Xanh dương, Đỏ, Đen, Trắng"
+        "capacity": "500ml / 17floz",
+        "material": "TPU/Silicone không chứa BPA",
+        "weight": "80g",
+        "dimensions": "Thiết kế linh hoạt, có thể co lại",
+        "color": "Xanh dương đậm"
       },
       "features": [
-        "Chống rò rỉ 100%",
-        "Nắp vặn chắc chắn",
-        "Dễ dàng vệ sinh",
-        "Không chứa BPA",
-        "Thiết kế ergonomic"
+        "Dung tích lớn 500ml",
+        "Thiết kế mềm dẻo, có thể co lại",
+        "Vòi hút đẩy-kéo tiện lợi",
+        "Nhẹ, gọn, dễ mang theo",
+        "Không chứa BPA"
       ],
       "category": "sports",
       "inStock": true,
@@ -32,28 +30,27 @@
     },
     {
       "id": "2",
-      "name": "Bình nước thể thao Active 500ml",
-      "price": 250000,
-      "originalPrice": null,
-      "description": "Bình nước thể thao nhỏ gọn 500ml, lý tưởng cho chạy bộ và các hoạt động thể thao ngoài trời. Thiết kế nhẹ, dễ cầm nắm.",
-      "shortDescription": "Bình nước thể thao 500ml, nhỏ gọn, phù hợp chạy bộ",
+      "name": "Bình Nước Thể Thao YOLO SPORT 15cm",
+      "price": 150000,
+      "originalPrice": 200000,
+      "description": "Bình nước thể thao YOLO SPORT với kích thước nhỏ gọn 15cm x 7.5cm, là người bạn đồng hành lý tưởng cho mọi hoạt động thể thao. Thân bình màu trắng trong suốt kết hợp với nắp đen chắc chắn, tích hợp vòi uống dạng kéo/đẩy tiện dụng. Thiết kế hình bầu dục dẹt, dễ cầm nắm, phù hợp cho tập luyện, chạy bộ, đạp xe hay dã ngoại.",
+      "shortDescription": "Bình nước YOLO SPORT 15cm, nhỏ gọn, vòi uống tiện lợi",
       "images": [
-        "/img/products/bottle-2-main.svg",
-        "/img/products/bottle-2-side.svg"
+        "/img/products/yolo-sport.png"
       ],
       "specs": {
-        "capacity": "500ml",
-        "material": "Nhựa Tritan không chứa BPA",
+        "capacity": "Khoảng 500ml",
+        "material": "Nhựa cao cấp không chứa BPA",
         "weight": "120g",
-        "dimensions": "22cm x 6cm",
-        "color": "Xanh lá, Cam, Đen"
+        "dimensions": "15cm x 7.5cm",
+        "color": "Trắng, Nắp đen"
       },
       "features": [
-        "Thiết kế nhỏ gọn",
-        "Nắp bấm một tay",
+        "Kích thước nhỏ gọn",
+        "Vòi uống dạng kéo/đẩy",
+        "Thiết kế hình bầu dục dễ cầm",
         "Chống rò rỉ",
-        "Không chứa BPA",
-        "Dễ dàng mang theo"
+        "Không chứa BPA"
       ],
       "category": "sports",
       "inStock": true,
@@ -61,87 +58,26 @@
     },
     {
       "id": "3",
-      "name": "Bình nước thể thao Ultra 1000ml",
-      "price": 450000,
-      "originalPrice": 550000,
-      "description": "Bình nước thể thao dung tích lớn 1000ml, hoàn hảo cho các buổi tập dài hoặc đi du lịch. Có vạch đo dung tích và tay cầm tiện lợi.",
-      "shortDescription": "Bình nước thể thao 1000ml, dung tích lớn, có vạch đo",
-      "images": [
-        "/img/products/bottle-3-main.svg",
-        "/img/products/bottle-3-side.svg",
-        "/img/products/bottle-3-detail.svg"
-      ],
-      "specs": {
-        "capacity": "1000ml",
-        "material": "Nhựa Tritan không chứa BPA",
-        "weight": "250g",
-        "dimensions": "32cm x 8cm",
-        "color": "Xanh dương, Đen, Xám"
-      },
-      "features": [
-        "Dung tích lớn 1000ml",
-        "Vạch đo dung tích",
-        "Tay cầm tiện lợi",
-        "Chống rò rỉ",
-        "Không chứa BPA"
-      ],
-      "category": "sports",
-      "inStock": true,
-      "isFeatured": false
-    },
-    {
-      "id": "4",
-      "name": "Bình nước thể thao Compact 400ml",
-      "price": 200000,
+      "name": "Bình Nước Mềm WRELS 500ml",
+      "price": 190000,
       "originalPrice": null,
-      "description": "Bình nước thể thao siêu nhỏ gọn 400ml, phù hợp cho trẻ em và người có nhu cầu dung tích nhỏ. Thiết kế đáng yêu, màu sắc tươi sáng.",
-      "shortDescription": "Bình nước thể thao 400ml, siêu nhỏ gọn, phù hợp trẻ em",
+      "description": "Bình nước mềm WRELS 500ml với thiết kế có thể gập lại, tiết kiệm không gian tối đa. Màu xanh trong mờ tươi mát, vòi hút/cắn màu trắng trong suốt dễ dàng sử dụng khi di chuyển. Có vòng nhựa nhỏ để treo hoặc móc, rất tiện lợi. Thiết kế mềm dẻo, có thể ép dẹp hoặc cuộn gọn lại khi không sử dụng, lý tưởng cho chạy bộ, leo núi và các hoạt động ngoài trời.",
+      "shortDescription": "Bình nước mềm WRELS 500ml có thể gập lại, tiết kiệm không gian",
       "images": [
-        "/img/products/bottle-4-main.svg",
-        "/img/products/bottle-4-side.svg"
+        "/img/products/wrels-500ml.png"
       ],
       "specs": {
-        "capacity": "400ml",
-        "material": "Nhựa Tritan không chứa BPA",
-        "weight": "100g",
-        "dimensions": "20cm x 5.5cm",
-        "color": "Hồng, Vàng, Xanh lá"
+        "capacity": "500ml",
+        "material": "TPU/Silicone không chứa BPA",
+        "weight": "70g",
+        "dimensions": "Thiết kế mềm, có thể gập lại",
+        "color": "Xanh trong mờ"
       },
       "features": [
-        "Siêu nhỏ gọn",
-        "Thiết kế đáng yêu",
-        "Chống rò rỉ",
-        "An toàn cho trẻ em",
-        "Không chứa BPA"
-      ],
-      "category": "sports",
-      "inStock": true,
-      "isFeatured": false
-    },
-    {
-      "id": "5",
-      "name": "Bình nước thể thao Elite 850ml",
-      "price": 400000,
-      "originalPrice": 500000,
-      "description": "Bình nước thể thao cao cấp 850ml với thiết kế sang trọng. Có hệ thống lọc nước tích hợp và bảo hành 2 năm.",
-      "shortDescription": "Bình nước thể thao 850ml cao cấp, có hệ thống lọc nước",
-      "images": [
-        "/img/products/bottle-5-main.svg",
-        "/img/products/bottle-5-side.svg",
-        "/img/products/bottle-5-detail.svg"
-      ],
-      "specs": {
-        "capacity": "850ml",
-        "material": "Nhựa Tritan không chứa BPA",
-        "weight": "220g",
-        "dimensions": "30cm x 7.5cm",
-        "color": "Đen, Bạc, Xanh dương"
-      },
-      "features": [
-        "Hệ thống lọc nước tích hợp",
-        "Thiết kế sang trọng",
-        "Chống rò rỉ 100%",
-        "Bảo hành 2 năm",
+        "Có thể gập lại, tiết kiệm không gian",
+        "Vòi hút/cắn tiện lợi",
+        "Vòng treo/móc đi kèm",
+        "Nhẹ, mềm dẻo",
         "Không chứa BPA"
       ],
       "category": "sports",
@@ -149,33 +85,32 @@
       "isFeatured": true
     },
     {
-      "id": "6",
-      "name": "Bình nước thể thao Runner 600ml",
-      "price": 280000,
-      "originalPrice": null,
-      "description": "Bình nước thể thao chuyên dụng cho chạy bộ 600ml. Thiết kế ergonomic, có dây đeo và túi đựng đi kèm.",
-      "shortDescription": "Bình nước thể thao 600ml chuyên dụng cho chạy bộ",
+      "id": "4",
+      "name": "Chai Nước Gấp Gọn FutureEvo Xanh Mint",
+      "price": 250000,
+      "originalPrice": 300000,
+      "description": "Chai nước gấp gọn FutureEvo với thiết kế hiện đại, màu xanh mint tươi mát. Khi giãn ra đầy đủ có kích thước 22cm x 7.8cm x 7cm, khi gập lại chỉ còn 6.5cm x 10.8cm x 9.5cm - tiết kiệm không gian tối đa. Có dây đeo màu xanh mint tiện lợi, có thể dùng để cố định chai khi gập. Thiết kế với các đường vân hình học cho phép co giãn linh hoạt, phù hợp cho mọi hoạt động thể thao và du lịch.",
+      "shortDescription": "Chai nước gấp gọn FutureEvo, tiết kiệm không gian, có dây đeo",
       "images": [
-        "/img/products/bottle-6-main.svg",
-        "/img/products/bottle-6-side.svg"
+        "/img/products/futureevo-collapsible.png"
       ],
       "specs": {
-        "capacity": "600ml",
-        "material": "Nhựa Tritan không chứa BPA",
-        "weight": "150g",
-        "dimensions": "24cm x 6.5cm",
-        "color": "Đỏ, Xanh dương, Đen"
+        "capacity": "Khoảng 600-700ml",
+        "material": "Silicone/TPU không chứa BPA",
+        "weight": "90g",
+        "dimensions": "Giãn: 22cm x 7.8cm x 7cm | Gập: 6.5cm x 10.8cm x 9.5cm",
+        "color": "Xanh mint"
       },
       "features": [
-        "Thiết kế ergonomic",
-        "Dây đeo và túi đựng",
-        "Nắp bấm một tay",
-        "Chống rò rỉ",
+        "Có thể gấp gọn, tiết kiệm không gian 70%",
+        "Dây đeo tiện lợi",
+        "Thiết kế hiện đại, màu xanh mint",
+        "Nhẹ, dễ mang theo",
         "Không chứa BPA"
       ],
       "category": "sports",
       "inStock": true,
-      "isFeatured": false
+      "isFeatured": true
     }
   ]
 }
