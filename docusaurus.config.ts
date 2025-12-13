@@ -9,8 +9,8 @@ const { gitlogPromise } = require("gitlog");
 
 /** @type {import('@docusaurus/types').Config} */
 const config: Config = {
-  title: "Ignite Cookbook for React Native",
-  tagline: "Cooking up some cool recipes in Ignite for React Native!",
+  title: "Binh.run",
+  tagline: "Chạy bộ và sống khỏe mỗi ngày!",
   url: "https://infinitered.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -158,7 +158,7 @@ const config: Config = {
       navbar: {
         hideOnScroll: true,
         logo: {
-          alt: "React Native Cookbook Logo",
+          alt: "Binh.run Logo",
           src: "img/logo.svg",
         },
         items: [
@@ -224,7 +224,7 @@ const config: Config = {
         ],
       },
       footer: {
-        copyright: 'From the team at <a href="https://infinite.red/" target="_blank" rel="noopener noreferrer" class="ir-footer-link">Infinite Red</a> <img width="32" height="32" src="/img/ir-mark.svg" alt="dropdown" class="ir-mark" />',
+        copyright: '© 2025 <a href="https://binh.run/" target="_blank" rel="noopener noreferrer" class="ir-footer-link">Binh.run</a> - Chạy bộ và sống khỏe mỗi ngày!',
         style: "dark",
         links: [
           {
