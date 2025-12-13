@@ -25,3 +25,5 @@ yarn-error.log*
 /playwright/.cache/
 # ARIA snapshots (có thể commit nếu muốn so sánh)
 # /test-results/aria-snapshots/
+# Screenshots (tự động được ignore trong test-results/)
+# /test-results/screenshots/
