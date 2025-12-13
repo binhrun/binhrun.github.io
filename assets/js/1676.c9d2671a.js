@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkignite_cookbook=self.webpackChunkignite_cookbook||[]).push([[1676],{1676:(k,o,e)=>{e.r(o)}}]);

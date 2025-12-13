@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://infinitered.github.io/blog</id>
+    <title>Binh.run Blog</title>
+    <updated>2025-12-12T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://infinitered.github.io/blog"/>
+    <subtitle>Binh.run Blog</subtitle>
+    <icon>https://infinitered.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Sample Blog Post]]></title>
+        <id>https://infinitered.github.io/blog/sample-post</id>
+        <link href="https://infinitered.github.io/blog/sample-post"/>
+        <updated>2025-12-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Placeholder blog entry; replace with real update before publishing.]]></summary>
+        <content type="html"><![CDATA[<p>Welcome to the blog! Replace this sample post with your update. Use Markdown headings, code blocks, and images from <code>static/</code> as needed.</p>]]></content>
+        <author>
+            <name>Sébastien Lorber</name>
+            <uri>https://sebastienlorber.com</uri>
+        </author>
+        <category label="sample" term="sample"/>
+    </entry>
+</feed>
