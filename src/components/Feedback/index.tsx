@@ -1,70 +1,34 @@
-import React, { useState } from "react";
-import styles from "./styles.module.css";
+import React from 'react';
+import styles from './styles.module.css';
 
-import * as ThumbsUp from "@site/static/img/thumbs-up.svg";
-import * as ThumbsDown from "@site/static/img/thumbs-down.svg";
+export default function Feedback(): JSX.Element {
+  const [feedback, setFeedback] = React.useState('');
+  const [submitted, setSubmitted] = React.useState(false);
 
-const VotedYes = () => {
-  return (
-    <span>Thanks for your feedback! We hope this recipe has been helpful.</span>
-  );
-};
-
-const VotedNo = () => {
-  return (
-    <span>
-      Thanks for your feedback. We will update this recipe as soon as we can.
-    </span>
-  );
-};
-
-type ReactionValue = "yes" | "no";
-
-export default function Feedback({ resourceId }: { resourceId: string }) {
-  const [reaction, setReaction] = useState<ReactionValue | null>(null);
-
-  const isReacted = reaction === "yes" || reaction === "no";
-
-  const handleReaction = (reaction: ReactionValue) => {
-    setReaction(reaction);
-
-    // track using Google Analytics custom event
-    // include the resource name and yes/no in the event name for tracking purposes
-    // gtag is not defined in dev, see https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-google-gtag
-    gtag("event", `feedback_${resourceId}_${reaction}`, {
-      event_category: "feedback",
-      event_label: resourceId,
-    });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you would typically send the feedback to a server
+    console.log('Feedback submitted:', feedback);
+    setSubmitted(true);
   };
 
   return (
-    <div className={styles.root}>
-      <h3 className={styles.title}>
-        Is this page still up to date? Did it work for you?
-      </h3>
-      {!isReacted ? (
-        <div className={styles.grid}>
-          <button
-            className={styles.reactionButton}
-            onClick={() => handleReaction("yes")}
-            aria-label="Yes"
-          >
-            <ThumbsUp.default className={styles.reactionIcon} />
-            <div className={styles.reactionText}>Yes</div>
-          </button>
-          <button
-            className={styles.reactionButton}
-            onClick={() => handleReaction("no")}
-            aria-label="No"
-          >
-            <ThumbsDown.default className={styles.reactionIcon} />
-            <div className={styles.reactionText}>No</div>
-          </button>
-        </div>
-      ) : reaction === "no" ? (
-        <VotedNo />
+    <div className={styles.feedbackContainer}>
+      {submitted ? (
+        <p>Thank you for your feedback!</p>
       ) : (
-        <VotedYes />
+        <form onSubmit={handleSubmit}>
+          <textarea
+            className={styles.feedbackTextarea}
+            value={feedback}
+            onChange={(e) => setFeedback(e.target.value)}
+            placeholder="Share your feedback..."
+            required
+          />
+          <button type="submit" className={styles.submitButton}>
+            Submit Feedback
+          </button>
+        </form>
       )}
     </div>
   );
