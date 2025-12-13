@@ -24,11 +24,18 @@ export default defineConfig({
     baseURL: 'http://localhost:3000',
     /* Collect trace khi retry test case bị fail */
     trace: 'on-first-retry',
-    /* Screenshot ở mỗi step */
-    screenshot: 'on',
+    /* Screenshot configuration
+     * - 'off': Không chụp screenshot
+     * - 'on': Chụp screenshot khi test fail
+     * - 'only-on-failure': Chỉ chụp khi test fail (mặc định)
+     */
+    screenshot: 'only-on-failure',
     /* Video recording */
     video: 'retain-on-failure',
   },
+
+  /* Cấu hình screenshot paths và options */
+  snapshotPathTemplate: '{testDir}/{testFileDir}/{testFileName}-snapshots/{arg}{ext}',
 
   /* Cấu hình expect cho snapshots */
   expect: {
