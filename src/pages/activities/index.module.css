@@ -1,0 +1,52 @@
+.activitiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.activityCard {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.activityCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.activityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.activityType {
+  color: #FF6B35;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.activityDistance {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.activityDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.activityDetails p {
+  margin: 0;
+  color: var(--ifm-color-content-secondary);
+}

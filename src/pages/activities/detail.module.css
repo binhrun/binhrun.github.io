@@ -1,0 +1,62 @@
+.backLink {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+  color: var(--ifm-color-primary-dark);
+}
+
+.activityDetail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.activityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+}
+
+.activityType {
+  color: #FF6B35;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.activityDistance {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.activityInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+}
+
+.infoLabel {
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+}
+
+.infoValue {
+  font-weight: 500;
+  color: var(--ifm-color-content);
+}
