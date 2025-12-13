@@ -1,26 +1,9 @@
 import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import styles from "./styles.module.css";
-import { usePluginData } from "@docusaurus/useGlobalData";
-import type { Snippet } from "../../types";
 
-const faceLookingDown = require("@site/static/img/face-looking-down.png");
-const cardButtons = require("@site/static/img/card-buttons.png");
-const cardControls = require("@site/static/img/card-controls.png");
-const cardTextStyles = require("@site/static/img/card-text-styles.png");
-const monocle = require("@site/static/img/monocle.png");
-const screenComponents = require("@site/static/img/screen-components.png");
-const screenMenu = require("@site/static/img/screen-menu.png");
 const circleFace1 = require("@site/static/img/circle-face-1.png");
 const circleFace2 = require("@site/static/img/circle-face-2.png");
 const circleFace3 = require("@site/static/img/circle-face-3.png");
-const communityScreen1 = require("@site/static/img/community-screen-1.png");
-const communityScreen2 = require("@site/static/img/community-screen-2.png");
-const communityScreen3 = require("@site/static/img/community-screen-3.png");
-const communityScreen4 = require("@site/static/img/community-screen-4.png");
-const communityScreen5 = require("@site/static/img/community-screen-5.png");
-const communityScreen6 = require("@site/static/img/community-screen-6.png");
-const communityScreen7 = require("@site/static/img/community-screen-7.png");
-const communityScreen8 = require("@site/static/img/community-screen-8.png");
 
 type FeatureItem = {
   title: string;
@@ -32,150 +15,131 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Spin Up Your App In Record Time",
+    title: "Theo dõi mọi buổi chạy của bạn",
     Component: () => {
       const ref = useRef(null);
       const inViewport = useIntersection(ref, "0px");
       const [transition, setTransition] = useState(false);
-      const [monocleTransition, setMonocleTransition] = useState(false);
 
       useEffect(() => {
         if (inViewport) {
           const timeout = setTimeout(() => setTransition(true), 500);
-          const monocleTimeout = setTimeout(
-            () => setMonocleTransition(true),
-            1000
-          );
           return () => {
             clearTimeout(timeout);
-            clearTimeout(monocleTimeout);
           };
         }
       }, [inViewport]);
 
       return (
-        <div className={styles.imageOneContainer} ref={ref}>
-          <img
-            alt="Animation Image"
-            src={cardButtons.default}
-            className={`${styles.cardButtonsInitial} ${
-              transition ? styles.cardButtonsFinal : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={cardControls.default}
-            className={`${styles.cardControlsInitial} ${
-              transition ? styles.cardControlsFinal : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={cardTextStyles.default}
-            className={`${styles.cardTextStylesInitial} ${
-              transition ? styles.cardTextStylesFinal : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={screenComponents.default}
-            className={`${styles.screenComponentsInitial} ${
-              transition ? styles.screenComponentsFinal : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={screenMenu.default}
-            className={`${styles.screenMenuInitial} ${
-              transition ? styles.screenMenuFinal : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={monocle.default}
-            className={`${styles.monocleInitial} ${
-              monocleTransition ? styles.monocleFinal : ""
-            }`}
-          />
+        <div className={styles.imageOneContainer} ref={ref} style={{ 
+          display: "flex", 
+          flexDirection: "column", 
+          alignItems: "center", 
+          justifyContent: "center",
+          padding: "2rem",
+          backgroundColor: "#f5f5f5",
+          borderRadius: "12px",
+          minHeight: "300px"
+        }}>
+          <div style={{ 
+            fontSize: "48px", 
+            fontWeight: "bold", 
+            color: "#FF6B35",
+            marginBottom: "1rem",
+            opacity: transition ? 1 : 0,
+            transition: "opacity 0.5s"
+          }}>
+            5.2 km
+          </div>
+          <div style={{ 
+            fontSize: "24px", 
+            color: "#564E4A",
+            marginBottom: "0.5rem",
+            opacity: transition ? 1 : 0,
+            transition: "opacity 0.5s 0.2s"
+          }}>
+            28:45
+          </div>
+          <div style={{ 
+            fontSize: "18px", 
+            color: "#564E4A",
+            opacity: transition ? 1 : 0,
+            transition: "opacity 0.5s 0.4s"
+          }}>
+            Pace: 5:32/km
+          </div>
         </div>
       );
     },
     description: (
       <>
-        Stop reinventing the wheel on every project. Use the{" "}
-        <a href={"https://docs.infinite.red/ignite-cli"}>Ignite CLI</a> to get
-        your app started. Then, hop over to the Ignite Cookbook for React Native
-        to browse for things like libraries in “cookie cutter” templates that
-        work for almost any project. It’s the fastest way to get a React Native
-        app off the ground.
+        Ghi lại mọi buổi chạy của bạn với GPS chính xác. Theo dõi quãng đường, 
+        thời gian, tốc độ và độ cao. Binh.run tự động lưu lại lịch sử chạy bộ 
+        của bạn để bạn có thể xem lại và theo dõi tiến trình theo thời gian.
       </>
     ),
   },
   {
-    title: "Find Quality Code When You Need It",
+    title: "Phân tích hiệu suất chi tiết",
     Component: () => {
-      const { snippets } = usePluginData("example-code-snippets") as {
-        snippets: Snippet[];
-      };
-
       const [show, setShow] = useState(false);
+      const stats = [
+        { label: "Tổng quãng đường", value: "125.5 km", color: "#FF6B35" },
+        { label: "Tổng thời gian", value: "10h 45m", color: "#41476E" },
+        { label: "Số buổi chạy", value: "15", color: "#564E4A" },
+        { label: "Pace trung bình", value: "5:08/km", color: "#FF6B35" },
+      ];
       const [current, setCurrent] = useState(0);
+
       useEffect(() => {
         const interval = setInterval(() => {
           setShow(false);
-          setCurrent((current) => (current + 1) % snippets.length);
-          setTimeout(() => setShow(true), 1000);
-        }, 3300);
+          setCurrent((current) => (current + 1) % stats.length);
+          setTimeout(() => setShow(true), 300);
+        }, 2500);
+        setShow(true);
         return () => clearInterval(interval);
-      }, [snippets]);
+      }, []);
 
-      const snippet = snippets[current] ?? {
-        author: "",
-        content: "",
-        lastUpdated: "...",
-      };
+      const stat = stats[current];
 
       return (
-        <div className={styles.imageTwoContainer}>
-          <div className={styles.codeSnippet}>
-            <div
-              className={styles.scrollBar}
-              style={show ? { transform: `translateY(376px)` } : {}}
-            />
-            <pre
-              style={!show ? { opacity: 0, transform: `translateY(50px)` } : {}}
-            >
-              {snippet.content}
-            </pre>
-          </div>
-
-          <div className={styles.timeStamp}>
-            <div className={styles.timeStampText}>
-              updated
-              <span> {snippet.lastUpdated}</span>
-              <span>{show && " by " + snippet.author}</span>
+        <div className={styles.imageTwoContainer} style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "2rem",
+          backgroundColor: "#f5f5f5",
+          borderRadius: "12px",
+          minHeight: "300px"
+        }}>
+          <div style={{
+            opacity: show ? 1 : 0,
+            transform: show ? "translateY(0)" : "translateY(20px)",
+            transition: "all 0.5s",
+            textAlign: "center"
+          }}>
+            <div style={{ fontSize: "14px", color: "#564E4A", marginBottom: "0.5rem" }}>
+              {stat.label}
+            </div>
+            <div style={{ fontSize: "42px", fontWeight: "bold", color: stat.color }}>
+              {stat.value}
             </div>
           </div>
-          <img
-            alt="Animation Image"
-            className={styles.faceLookingDown}
-            src={faceLookingDown.default}
-          />
         </div>
       );
     },
     description: (
       <>
-        The popular forum sites are great for finding code until you realize
-        it’s based on an old version of React Native. Ignite Cookbook is a place
-        for recipes that work as of the time they’re published – meaning, it
-        worked when it was posted. And if it ever goes out of date, we’ll make
-        sure the community knows on what version it was last working.
+        Xem thống kê chi tiết về hiệu suất chạy bộ của bạn. Phân tích xu hướng, 
+        cải thiện pace, và đặt mục tiêu mới. Binh.run cung cấp các biểu đồ và 
+        báo cáo giúp bạn hiểu rõ hơn về tiến trình của mình.
       </>
     ),
   },
   {
-    title: "Backed By A Community of React Native Experts",
+    title: "Tham gia cộng đồng người chạy bộ",
     Component: () => {
       const ref = useRef(null);
       const inViewport = useIntersection(ref, "0px");
@@ -193,95 +157,75 @@ const FeatureList: FeatureItem[] = [
           };
         }
       }, [inViewport]);
+      
       return (
-        <div className={styles.imageThreeContainer} ref={ref}>
-          <img
-            alt="Animation Image"
-            src={circleFace1.default}
-            className={`${styles.circleFaceOneInitial} ${
-              facesTransition ? styles.circleFaceOne : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={circleFace2.default}
-            className={`${styles.circleFaceTwoInitial} ${
-              facesTransition ? styles.circleFaceTwo : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={circleFace3.default}
-            className={`${styles.circleFaceThreeInitial} ${
-              facesTransition ? styles.circleFaceThree : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={communityScreen1.default}
-            className={`${styles.communityScreenOneInitial} ${
-              transition ? styles.communityScreenOne : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={communityScreen2.default}
-            className={`${styles.communityScreenTwoInitial} ${
-              transition ? styles.communityScreenTwo : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={communityScreen3.default}
-            className={`${styles.communityScreenThreeInitial} ${
-              transition ? styles.communityScreenThree : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={communityScreen4.default}
-            className={`${styles.communityScreenFourInitial} ${
-              transition ? styles.communityScreenFour : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={communityScreen5.default}
-            className={`${styles.communityScreenFiveInitial} ${
-              transition ? styles.communityScreenFive : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={communityScreen6.default}
-            className={`${styles.communityScreenSixInitial} ${
-              transition ? styles.communityScreenSix : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={communityScreen7.default}
-            className={`${styles.communityScreenSevenInitial} ${
-              transition ? styles.communityScreenSeven : ""
-            }`}
-          />
-          <img
-            alt="Animation Image"
-            src={communityScreen8.default}
-            className={`${styles.communityScreenEightInitial} ${
-              transition ? styles.communityScreenEight : ""
-            }`}
-          />
+        <div className={styles.imageThreeContainer} ref={ref} style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "2rem",
+          backgroundColor: "#f5f5f5",
+          borderRadius: "12px",
+          minHeight: "300px",
+          position: "relative"
+        }}>
+          <div style={{
+            display: "flex",
+            gap: "1rem",
+            marginBottom: "1rem"
+          }}>
+            <img
+              alt="Runner"
+              src={circleFace1.default}
+              className={`${styles.circleFaceOneInitial} ${
+                facesTransition ? styles.circleFaceOne : ""
+              }`}
+              style={{ width: "60px", height: "60px", borderRadius: "50%" }}
+            />
+            <img
+              alt="Runner"
+              src={circleFace2.default}
+              className={`${styles.circleFaceTwoInitial} ${
+                facesTransition ? styles.circleFaceTwo : ""
+              }`}
+              style={{ width: "60px", height: "60px", borderRadius: "50%" }}
+            />
+            <img
+              alt="Runner"
+              src={circleFace3.default}
+              className={`${styles.circleFaceThreeInitial} ${
+                facesTransition ? styles.circleFaceThree : ""
+              }`}
+              style={{ width: "60px", height: "60px", borderRadius: "50%" }}
+            />
+          </div>
+          <div style={{
+            fontSize: "24px",
+            fontWeight: "bold",
+            color: "#41476E",
+            opacity: transition ? 1 : 0,
+            transition: "opacity 0.5s"
+          }}>
+            Kết nối với hàng ngàn người chạy
+          </div>
+          <div style={{
+            fontSize: "16px",
+            color: "#564E4A",
+            marginTop: "0.5rem",
+            opacity: transition ? 1 : 0,
+            transition: "opacity 0.5s 0.2s"
+          }}>
+            Chia sẻ, thách thức và cùng nhau tiến bộ
+          </div>
         </div>
       );
     },
     description: (
       <>
-        The Ignite Cookbook isn’t just a random group of code snippets. It’s a
-        curated collection of usable code samples that the Infinite Red team’s
-        used in their own React Native projects. Having worked with some of the
-        biggest clients in the tech industry, we know a thing or two about
-        keeping our code to a high standard. You can code confidently!
+        Tham gia cộng đồng người chạy bộ lớn nhất Việt Nam. Kết nối với bạn bè, 
+        tham gia các thử thách, và chia sẻ thành tích của bạn. Cộng đồng Binh.run 
+        luôn sẵn sàng động viên và hỗ trợ bạn trên hành trình chạy bộ.
       </>
     ),
   },
