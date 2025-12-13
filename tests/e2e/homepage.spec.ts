@@ -10,7 +10,7 @@ test.describe('Trang chủ', () => {
     });
     
     await test.step('Kiểm tra title của trang', async () => {
-      await expect(page).toHaveTitle(/Ignite Cookbook for React Native/);
+      await expect(page).toHaveTitle(/Binh\.run/i);
       await page.screenshot({ path: `test-results/${testName}-2-title-check.png`, fullPage: true });
     });
   });
@@ -24,75 +24,71 @@ test.describe('Trang chủ', () => {
     });
     
     await test.step('Kiểm tra hero title', async () => {
-      const heroTitle = page.locator('h1').filter({ hasText: /Proven Recipes/i });
+      const heroTitle = page.getByRole('heading', { level: 1, name: /Binh\.run/i });
       await expect(heroTitle).toBeVisible();
       await page.screenshot({ path: `test-results/${testName}-2-hero-title.png`, fullPage: true });
     });
     
     await test.step('Kiểm tra description', async () => {
-      // Tránh fail do dấu nháy cong/quote khác nhau (doesn't vs doesn’t)
-      const description = page.getByText(/Starting from scratch/i);
+      const description = page.getByText(/Binh\.run là nền tảng/i);
       await expect(description).toBeVisible();
       await page.screenshot({ path: `test-results/${testName}-3-description.png`, fullPage: true });
     });
   });
 
-  test('nên có button "Let\'s get cooking" và có thể click', async ({ page }) => {
-    const testName = 'nên-có-button-lets-get-cooking-và-có-thể-click';
-    let cookingButton;
+  test('nên có CTA "Bắt đầu chạy ngay" trỏ đến /activities', async ({ page }) => {
+    const testName = 'nên-có-cta-bắt-đầu-chạy-ngay-trỏ-đến-activities';
+    let cta;
     
     await test.step('Navigate đến trang chủ', async () => {
       await page.goto('/');
       await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
     });
     
-    await test.step('Tìm và kiểm tra button "Let\'s get cooking"', async () => {
-      cookingButton = page.getByRole('link', { name: /Let's get cooking/i });
-      await expect(cookingButton).toBeVisible();
-      await page.screenshot({ path: `test-results/${testName}-2-button-visible.png`, fullPage: true });
-    });
-    
-    await test.step('Click button và kiểm tra navigation', async () => {
-      await cookingButton.click();
-      await expect(page).toHaveURL(/.*\/docs\/intro/);
-      await page.screenshot({ path: `test-results/${testName}-3-after-click.png`, fullPage: true });
+    await test.step('Tìm và kiểm tra CTA', async () => {
+      cta = page.getByRole('link', { name: /Bắt đầu chạy ngay/i });
+      await expect(cta).toBeVisible();
+      await expect(cta).toHaveAttribute('href', '/activities');
+      await page.screenshot({ path: `test-results/${testName}-2-cta-visible.png`, fullPage: true });
     });
   });
 
-  test('nên hiển thị section "Freshly added to the cookbook"', async ({ page }) => {
-    const testName = 'nên-hiển-thị-section-freshly-added-to-the-cookbook';
+  test('nên hiển thị "Hoạt động gần đây" và có link "Xem tất cả hoạt động"', async ({ page }) => {
+    const testName = 'nên-hiển-thị-hoạt-động-gần-đây-và-link-xem-tất-cả-hoạt-động';
     
     await test.step('Navigate đến trang chủ', async () => {
       await page.goto('/');
       await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
     });
     
-    await test.step('Kiểm tra section header', async () => {
-      const freshSection = page.getByText(/Freshly added to the cookbook/i);
-      await expect(freshSection).toBeVisible();
-      await page.screenshot({ path: `test-results/${testName}-2-fresh-section.png`, fullPage: true });
+    await test.step('Kiểm tra section "Hoạt động gần đây"', async () => {
+      await expect(page.getByText(/Hoạt động gần đây/i)).toBeVisible();
+      // Có ít nhất 1 entry mock
+      await expect(page.getByText(/Công viên|Hồ Tây/i).first()).toBeVisible();
+      await page.screenshot({ path: `test-results/${testName}-2-recent-activities.png`, fullPage: true });
+    });
+
+    await test.step('Kiểm tra link "Xem tất cả hoạt động"', async () => {
+      const allActivities = page.getByRole('link', { name: /Xem tất cả hoạt động/i });
+      await expect(allActivities).toBeVisible();
+      await expect(allActivities).toHaveAttribute('href', '/activities');
+      await page.screenshot({ path: `test-results/${testName}-3-all-activities-link.png`, fullPage: true });
     });
   });
 
-  test('nên có link "View all recipes"', async ({ page }) => {
-    const testName = 'nên-có-link-view-all-recipes';
-    let viewAllLink;
+  test('nên hiển thị "Thống kê tuần này" và tổng quãng đường', async ({ page }) => {
+    const testName = 'nên-hiển-thị-thống-kê-tuần-này-và-tổng-quãng-đường';
     
     await test.step('Navigate đến trang chủ', async () => {
       await page.goto('/');
       await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
     });
     
-    await test.step('Kiểm tra link "View all recipes"', async () => {
-      viewAllLink = page.getByRole('link', { name: /View all recipes/i });
-      await expect(viewAllLink).toBeVisible();
-      await page.screenshot({ path: `test-results/${testName}-2-link-visible.png`, fullPage: true });
-    });
-    
-    await test.step('Click link và kiểm tra navigation', async () => {
-      await viewAllLink.click();
-      await expect(page).toHaveURL(/.*\/docs\/intro/);
-      await page.screenshot({ path: `test-results/${testName}-3-after-click.png`, fullPage: true });
+    await test.step('Kiểm tra nội dung thống kê', async () => {
+      await expect(page.getByText(/Thống kê tuần này/i)).toBeVisible();
+      await expect(page.getByText(/42\.5 km/i)).toBeVisible();
+      await expect(page.getByText(/5/i).first()).toBeVisible();
+      await page.screenshot({ path: `test-results/${testName}-2-week-stats.png`, fullPage: true });
     });
   });
 
@@ -108,6 +104,52 @@ test.describe('Trang chủ', () => {
       const navbar = page.locator('nav');
       await expect(navbar).toBeVisible();
       await page.screenshot({ path: `test-results/${testName}-2-navbar.png`, fullPage: true });
+    });
+
+    await test.step('Kiểm tra logo Binh.run', async () => {
+      const logo = page.getByRole('link', { name: /Binh\.run Logo/i });
+      await expect(logo).toBeVisible();
+      await expect(logo).toHaveAttribute('href', '/');
+      await page.screenshot({ path: `test-results/${testName}-3-logo.png`, fullPage: true });
+    });
+  });
+
+  test('nên hiển thị section "Các buổi chạy gần đây" và link "Xem tất cả buổi chạy"', async ({ page }) => {
+    const testName = 'nên-hiển-thị-các-buổi-chạy-gần-đây-và-link-xem-tất-cả-buổi-chạy';
+
+    await test.step('Navigate đến trang chủ', async () => {
+      await page.goto('/');
+      await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
+    });
+
+    await test.step('Kiểm tra section và ít nhất 1 item chạy', async () => {
+      await expect(page.getByText(/Các buổi chạy gần đây/i)).toBeVisible();
+      await expect(page.getByRole('link', { name: /km/i }).first()).toBeVisible();
+      await page.screenshot({ path: `test-results/${testName}-2-recent-runs.png`, fullPage: true });
+    });
+
+    await test.step('Kiểm tra link "Xem tất cả buổi chạy"', async () => {
+      const allRuns = page.getByRole('link', { name: /Xem tất cả buổi chạy/i });
+      await expect(allRuns).toBeVisible();
+      await expect(allRuns).toHaveAttribute('href', '/activities');
+      await page.screenshot({ path: `test-results/${testName}-3-all-runs-link.png`, fullPage: true });
+    });
+  });
+
+  test('footer nên có copyright Binh.run', async ({ page }) => {
+    const testName = 'footer-nên-có-copyright-binh-run';
+
+    await test.step('Navigate đến trang chủ', async () => {
+      await page.goto('/');
+      await page.screenshot({ path: `test-results/${testName}-1-navigate.png`, fullPage: true });
+    });
+
+    await test.step('Kiểm tra footer có Binh.run', async () => {
+      const footer = page.locator('footer');
+      await expect(footer).toBeVisible();
+      await expect(footer.getByRole('link', { name: /Binh\.run/i })).toBeVisible();
+      await expect(page.getByText(/© 2025/i)).toBeVisible();
+      await page.screenshot({ path: `test-results/${testName}-2-footer.png`, fullPage: true });
     });
   });
 });
