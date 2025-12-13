@@ -1,0 +1,182 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Bình nước thể thao Pro 750ml",
+      "price": 350000,
+      "originalPrice": 450000,
+      "description": "Bình nước thể thao cao cấp với dung tích 750ml, phù hợp cho mọi hoạt động thể thao. Thiết kế hiện đại, chống rò rỉ và dễ dàng vệ sinh.",
+      "shortDescription": "Bình nước thể thao 750ml, chống rò rỉ, thiết kế hiện đại",
+      "images": [
+        "/img/products/bottle-1-main.svg",
+        "/img/products/bottle-1-side.svg",
+        "/img/products/bottle-1-detail.svg"
+      ],
+      "specs": {
+        "capacity": "750ml",
+        "material": "Nhựa Tritan không chứa BPA",
+        "weight": "180g",
+        "dimensions": "28cm x 7cm",
+        "color": "Xanh dương, Đỏ, Đen, Trắng"
+      },
+      "features": [
+        "Chống rò rỉ 100%",
+        "Nắp vặn chắc chắn",
+        "Dễ dàng vệ sinh",
+        "Không chứa BPA",
+        "Thiết kế ergonomic"
+      ],
+      "category": "sports",
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "2",
+      "name": "Bình nước thể thao Active 500ml",
+      "price": 250000,
+      "originalPrice": null,
+      "description": "Bình nước thể thao nhỏ gọn 500ml, lý tưởng cho chạy bộ và các hoạt động thể thao ngoài trời. Thiết kế nhẹ, dễ cầm nắm.",
+      "shortDescription": "Bình nước thể thao 500ml, nhỏ gọn, phù hợp chạy bộ",
+      "images": [
+        "/img/products/bottle-2-main.svg",
+        "/img/products/bottle-2-side.svg"
+      ],
+      "specs": {
+        "capacity": "500ml",
+        "material": "Nhựa Tritan không chứa BPA",
+        "weight": "120g",
+        "dimensions": "22cm x 6cm",
+        "color": "Xanh lá, Cam, Đen"
+      },
+      "features": [
+        "Thiết kế nhỏ gọn",
+        "Nắp bấm một tay",
+        "Chống rò rỉ",
+        "Không chứa BPA",
+        "Dễ dàng mang theo"
+      ],
+      "category": "sports",
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "3",
+      "name": "Bình nước thể thao Ultra 1000ml",
+      "price": 450000,
+      "originalPrice": 550000,
+      "description": "Bình nước thể thao dung tích lớn 1000ml, hoàn hảo cho các buổi tập dài hoặc đi du lịch. Có vạch đo dung tích và tay cầm tiện lợi.",
+      "shortDescription": "Bình nước thể thao 1000ml, dung tích lớn, có vạch đo",
+      "images": [
+        "/img/products/bottle-3-main.svg",
+        "/img/products/bottle-3-side.svg",
+        "/img/products/bottle-3-detail.svg"
+      ],
+      "specs": {
+        "capacity": "1000ml",
+        "material": "Nhựa Tritan không chứa BPA",
+        "weight": "250g",
+        "dimensions": "32cm x 8cm",
+        "color": "Xanh dương, Đen, Xám"
+      },
+      "features": [
+        "Dung tích lớn 1000ml",
+        "Vạch đo dung tích",
+        "Tay cầm tiện lợi",
+        "Chống rò rỉ",
+        "Không chứa BPA"
+      ],
+      "category": "sports",
+      "inStock": true,
+      "isFeatured": false
+    },
+    {
+      "id": "4",
+      "name": "Bình nước thể thao Compact 400ml",
+      "price": 200000,
+      "originalPrice": null,
+      "description": "Bình nước thể thao siêu nhỏ gọn 400ml, phù hợp cho trẻ em và người có nhu cầu dung tích nhỏ. Thiết kế đáng yêu, màu sắc tươi sáng.",
+      "shortDescription": "Bình nước thể thao 400ml, siêu nhỏ gọn, phù hợp trẻ em",
+      "images": [
+        "/img/products/bottle-4-main.svg",
+        "/img/products/bottle-4-side.svg"
+      ],
+      "specs": {
+        "capacity": "400ml",
+        "material": "Nhựa Tritan không chứa BPA",
+        "weight": "100g",
+        "dimensions": "20cm x 5.5cm",
+        "color": "Hồng, Vàng, Xanh lá"
+      },
+      "features": [
+        "Siêu nhỏ gọn",
+        "Thiết kế đáng yêu",
+        "Chống rò rỉ",
+        "An toàn cho trẻ em",
+        "Không chứa BPA"
+      ],
+      "category": "sports",
+      "inStock": true,
+      "isFeatured": false
+    },
+    {
+      "id": "5",
+      "name": "Bình nước thể thao Elite 850ml",
+      "price": 400000,
+      "originalPrice": 500000,
+      "description": "Bình nước thể thao cao cấp 850ml với thiết kế sang trọng. Có hệ thống lọc nước tích hợp và bảo hành 2 năm.",
+      "shortDescription": "Bình nước thể thao 850ml cao cấp, có hệ thống lọc nước",
+      "images": [
+        "/img/products/bottle-5-main.svg",
+        "/img/products/bottle-5-side.svg",
+        "/img/products/bottle-5-detail.svg"
+      ],
+      "specs": {
+        "capacity": "850ml",
+        "material": "Nhựa Tritan không chứa BPA",
+        "weight": "220g",
+        "dimensions": "30cm x 7.5cm",
+        "color": "Đen, Bạc, Xanh dương"
+      },
+      "features": [
+        "Hệ thống lọc nước tích hợp",
+        "Thiết kế sang trọng",
+        "Chống rò rỉ 100%",
+        "Bảo hành 2 năm",
+        "Không chứa BPA"
+      ],
+      "category": "sports",
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "6",
+      "name": "Bình nước thể thao Runner 600ml",
+      "price": 280000,
+      "originalPrice": null,
+      "description": "Bình nước thể thao chuyên dụng cho chạy bộ 600ml. Thiết kế ergonomic, có dây đeo và túi đựng đi kèm.",
+      "shortDescription": "Bình nước thể thao 600ml chuyên dụng cho chạy bộ",
+      "images": [
+        "/img/products/bottle-6-main.svg",
+        "/img/products/bottle-6-side.svg"
+      ],
+      "specs": {
+        "capacity": "600ml",
+        "material": "Nhựa Tritan không chứa BPA",
+        "weight": "150g",
+        "dimensions": "24cm x 6.5cm",
+        "color": "Đỏ, Xanh dương, Đen"
+      },
+      "features": [
+        "Thiết kế ergonomic",
+        "Dây đeo và túi đựng",
+        "Nắp bấm một tay",
+        "Chống rò rỉ",
+        "Không chứa BPA"
+      ],
+      "category": "sports",
+      "inStock": true,
+      "isFeatured": false
+    }
+  ]
+}
+
