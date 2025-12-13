@@ -1,17 +1,17 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="./static/img/logo.svg" />
-    <img src="./static/img/logo-reversed.svg" alt="Ignite Cookbook Logo" width="200" />
+    <img src="./static/img/logo-reversed.svg" alt="Binh.run Logo" width="200" />
   </picture>
-  <a  href="https://infinitered.github.io/ignite-cookbook/">
-    <h2 align="center">Ignite Cookbook for React Native</h2>
+  <a  href="https://binh.run/">
+    <h2 align="center">Binh.run</h2>
   </a>
-  <h3 align="center">Proven Recipes for your React Native apps</h3>
+  <h3 align="center">Chạy bộ và sống khỏe mỗi ngày!</h3>
 
   <p align="center">
     <img src="https://media.giphy.com/media/zGeomrzPgNP3y/giphy.gif">
   </p>
-    <h4 align="center">Starting from scratch doesn’t always make sense. That’s why we made the Ignite Cookbook for React Native – an easy way for developers to browse and share code snippets (or “recipes”) that actually work.</h4>
+    <h4 align="center">Binh.run là nền tảng dành cho những người yêu thích chạy bộ và muốn sống một cuộc sống khỏe mạnh. Chúng tôi cung cấp các công cụ, mẹo và cộng đồng để giúp bạn đạt được mục tiêu chạy bộ của mình.</h4>
 </p>
 
 <br>
@@ -20,21 +20,21 @@
 
 <br>
 
-### What's the Ignite Cookbook for React Native all about?
+### Binh.run là gì?
 
-**Spin Up Your App In Record Time**
+**Theo dõi hành trình chạy bộ của bạn**
 
-> Stop reinventing the wheel on every project. Use the Ignite CLI to get your app started. Then, hop over to the Ignite Cookbook for React Native to browse for things like libraries in “cookie cutter” templates that work for almost any project. It’s the fastest way to get a React Native app off the ground.
+> Binh.run giúp bạn theo dõi các buổi chạy, đặt mục tiêu và cải thiện hiệu suất của mình. Với các công cụ theo dõi tiên tiến, bạn có thể xem tiến trình của mình và đạt được các mục tiêu chạy bộ.
 
-**Find Quality Code When You Need It**
+**Cộng đồng người chạy bộ**
 
-> The popular forum sites are great for finding code until you realize it’s based on an old version of React Native. Ignite Cookbook is a place for recipes that work as of the time they’re published – meaning, it worked when it was posted. And if it ever goes out of date, we’ll make sure the community knows on what version it was last working.
+> Tham gia cộng đồng những người yêu thích chạy bộ. Chia sẻ kinh nghiệm, nhận lời khuyên và tìm động lực từ những người chạy khác trên hành trình của bạn.
 
-**Backed By A Community Of React Native Experts**
+**Sống khỏe mỗi ngày**
 
-> The Ignite Cookbook isn’t just a random group of code snippets. It’s a curated collection of usable code samples that the Infinite Red team’s used in their own React Native projects. Having worked with some of the biggest clients in the tech industry, we know a thing or two about keeping our code to a high standard. You can code confidently!
+> Binh.run không chỉ là về chạy bộ. Chúng tôi khuyến khích một lối sống lành mạnh và cân bằng, giúp bạn sống tốt hơn mỗi ngày.
 
-### [Accelerate your development and dive into the Ignite Cookbook for React Native today!](https://ignitecookbook.com)
+### [Bắt đầu hành trình chạy bộ của bạn ngay hôm nay!](https://binh.run)
 
 ---
 
