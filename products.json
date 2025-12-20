@@ -1,116 +1,33 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Bình Mềm AONIJIE Trail Running 500ml",
-      "price": 220000,
+      "id": "binh-so-1",
+      "name": "Bình Số 1",
+      "price": 89000,
       "originalPrice": null,
-      "description": "Bình mềm AONIJIE 500ml với dung tích lớn hơn, lý tưởng cho các chặng chạy dài. Thiết kế mềm dẻo, có thể co lại khi hết nước, tiết kiệm không gian tối đa. Vòi hút đẩy-kéo dễ sử dụng, đảm bảo cung cấp đủ nước cho các hoạt động thể thao kéo dài. Thân bình linh hoạt, nhẹ, không gây cản trở khi di chuyển.",
-      "shortDescription": "Bình mềm AONIJIE 500ml dung tích lớn, phù hợp chạy đường dài",
+      "shortDescription": "Bình mini nhỏ gọn giúp các bạn giữ tay sạch – tâm an mọi lúc mọi nơi",
+      "description": "Bình mini hình trái tim với thiết kế nhỏ gọn, tiện lợi mang theo mọi lúc mọi nơi. Sản phẩm được làm từ nhựa trong suốt cao cấp, an toàn cho sức khỏe. Đi kèm carabiner màu sắc để dễ dàng treo vào túi xách, balo hoặc móc chìa khóa. Giúp bạn luôn giữ tay sạch sẽ và tâm an trong mọi hoạt động hàng ngày.",
       "images": [
-        "/img/products/aonijie-250ml-500ml.png"
+        "/img/products/binh-so-1.png"
       ],
+      "inStock": true,
+      "isFeatured": true,
+      "category": "Bình Số 1",
       "specs": {
-        "capacity": "500ml / 17floz",
-        "material": "TPU/Silicone không chứa BPA",
-        "weight": "80g",
-        "dimensions": "Thiết kế linh hoạt, có thể co lại",
-        "color": "Xanh dương đậm"
+        "capacity": "50ml",
+        "material": "Nhựa PET trong suốt",
+        "weight": "30g",
+        "dimensions": "6.5 x 5.5 x 2.5 cm",
+        "color": "Trong suốt, Carabiner hồng/xanh lá"
       },
       "features": [
-        "Dung tích lớn 500ml",
-        "Thiết kế mềm dẻo, có thể co lại",
-        "Vòi hút đẩy-kéo tiện lợi",
-        "Nhẹ, gọn, dễ mang theo",
-        "Không chứa BPA"
-      ],
-      "category": "sports",
-      "inStock": true,
-      "isFeatured": true
-    },
-    {
-      "id": "2",
-      "name": "Bình Nước Thể Thao YOLO SPORT 15cm",
-      "price": 150000,
-      "originalPrice": 200000,
-      "description": "Bình nước thể thao YOLO SPORT với kích thước nhỏ gọn 15cm x 7.5cm, là người bạn đồng hành lý tưởng cho mọi hoạt động thể thao. Thân bình màu trắng trong suốt kết hợp với nắp đen chắc chắn, tích hợp vòi uống dạng kéo/đẩy tiện dụng. Thiết kế hình bầu dục dẹt, dễ cầm nắm, phù hợp cho tập luyện, chạy bộ, đạp xe hay dã ngoại.",
-      "shortDescription": "Bình nước YOLO SPORT 15cm, nhỏ gọn, vòi uống tiện lợi",
-      "images": [
-        "/img/products/yolo-sport.png"
-      ],
-      "specs": {
-        "capacity": "Khoảng 500ml",
-        "material": "Nhựa cao cấp không chứa BPA",
-        "weight": "120g",
-        "dimensions": "15cm x 7.5cm",
-        "color": "Trắng, Nắp đen"
-      },
-      "features": [
-        "Kích thước nhỏ gọn",
-        "Vòi uống dạng kéo/đẩy",
-        "Thiết kế hình bầu dục dễ cầm",
-        "Chống rò rỉ",
-        "Không chứa BPA"
-      ],
-      "category": "sports",
-      "inStock": true,
-      "isFeatured": true
-    },
-    {
-      "id": "3",
-      "name": "Bình Nước Mềm WRELS 500ml",
-      "price": 190000,
-      "originalPrice": null,
-      "description": "Bình nước mềm WRELS 500ml với thiết kế có thể gập lại, tiết kiệm không gian tối đa. Màu xanh trong mờ tươi mát, vòi hút/cắn màu trắng trong suốt dễ dàng sử dụng khi di chuyển. Có vòng nhựa nhỏ để treo hoặc móc, rất tiện lợi. Thiết kế mềm dẻo, có thể ép dẹp hoặc cuộn gọn lại khi không sử dụng, lý tưởng cho chạy bộ, leo núi và các hoạt động ngoài trời.",
-      "shortDescription": "Bình nước mềm WRELS 500ml có thể gập lại, tiết kiệm không gian",
-      "images": [
-        "/img/products/wrels-500ml.png"
-      ],
-      "specs": {
-        "capacity": "500ml",
-        "material": "TPU/Silicone không chứa BPA",
-        "weight": "70g",
-        "dimensions": "Thiết kế mềm, có thể gập lại",
-        "color": "Xanh trong mờ"
-      },
-      "features": [
-        "Có thể gập lại, tiết kiệm không gian",
-        "Vòi hút/cắn tiện lợi",
-        "Vòng treo/móc đi kèm",
-        "Nhẹ, mềm dẻo",
-        "Không chứa BPA"
-      ],
-      "category": "sports",
-      "inStock": true,
-      "isFeatured": true
-    },
-    {
-      "id": "4",
-      "name": "Chai Nước Gấp Gọn FutureEvo Xanh Mint",
-      "price": 250000,
-      "originalPrice": 300000,
-      "description": "Chai nước gấp gọn FutureEvo với thiết kế hiện đại, màu xanh mint tươi mát. Khi giãn ra đầy đủ có kích thước 22cm x 7.8cm x 7cm, khi gập lại chỉ còn 6.5cm x 10.8cm x 9.5cm - tiết kiệm không gian tối đa. Có dây đeo màu xanh mint tiện lợi, có thể dùng để cố định chai khi gập. Thiết kế với các đường vân hình học cho phép co giãn linh hoạt, phù hợp cho mọi hoạt động thể thao và du lịch.",
-      "shortDescription": "Chai nước gấp gọn FutureEvo, tiết kiệm không gian, có dây đeo",
-      "images": [
-        "/img/products/futureevo-collapsible.png"
-      ],
-      "specs": {
-        "capacity": "Khoảng 600-700ml",
-        "material": "Silicone/TPU không chứa BPA",
-        "weight": "90g",
-        "dimensions": "Giãn: 22cm x 7.8cm x 7cm | Gập: 6.5cm x 10.8cm x 9.5cm",
-        "color": "Xanh mint"
-      },
-      "features": [
-        "Có thể gấp gọn, tiết kiệm không gian 70%",
-        "Dây đeo tiện lợi",
-        "Thiết kế hiện đại, màu xanh mint",
-        "Nhẹ, dễ mang theo",
-        "Không chứa BPA"
-      ],
-      "category": "sports",
-      "inStock": true,
-      "isFeatured": true
+        "Thiết kế hình trái tim độc đáo, dễ thương",
+        "Kích thước nhỏ gọn, dễ dàng mang theo",
+        "Đi kèm carabiner màu sắc để treo tiện lợi",
+        "Có 2 loại: nắp flip-top và vòi xịt",
+        "Chất liệu nhựa PET an toàn, trong suốt",
+        "Dung tích 50ml phù hợp cho nước rửa tay, nước hoa mini"
+      ]
     }
   ]
 }
