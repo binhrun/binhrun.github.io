@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Binh.run Blog</title>
+        <title>Binh.run - Bình thể thao Blog</title>
         <link>https://infinitered.github.io/blog</link>
-        <description>Binh.run Blog</description>
+        <description>Binh.run - Bình thể thao Blog</description>
         <lastBuildDate>Fri, 12 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
