@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://infinitered.github.io/blog</id>
-    <title>Binh.run - Bình thể thao Blog</title>
+    <title>Binh.run Blog</title>
     <updated>2025-12-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://infinitered.github.io/blog"/>
-    <subtitle>Binh.run - Bình thể thao Blog</subtitle>
+    <subtitle>Binh.run Blog</subtitle>
     <icon>https://infinitered.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Sample Blog Post]]></title>
