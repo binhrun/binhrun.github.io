@@ -7,6 +7,40 @@
   },
   "activities": [
     {
+      "id": 16815151604,
+      "type": "Run",
+      "name": "Morning Run",
+      "distance": "4.0 km",
+      "distanceMeters": 4006.9,
+      "duration": "26:45",
+      "durationSeconds": 1605,
+      "pace": "6:40/km",
+      "date": "2025-12-22T22:22:47Z",
+      "elevation": "+1m",
+      "location": "N/A",
+      "athlete": "Bình•run  Daily",
+      "map": {
+        "id": "a16815151604",
+        "summary_polyline": "iwy`AapzjSl@?vETf@?ZFxAB\\Dh@AHBDFEJ[ZmCvAsAz@_@PKNBNT^f@dAf@x@HHLBLAh@[TCxCVjAHL@BH?Z]nDIdBGPGnAIj@Ct@SzAGlBEVEJEBMBu@GIIAIJkA@]TqBJmBHi@@g@ZsEHg@@e@BUHIJEv@FFBDLo@fIETEx@Iv@?ZWfC?\\Ed@CZEHKFK?m@GIGEQd@}F?]PwADuARaBFgAHe@?SBOA[CGMGmCSWDk@ZM?KIi@eAi@y@MWCM@QBC|@c@p@a@`@[l@W|@i@XUJUKIOAsBGyAMe@@c@GaCEw@E",
+        "polyline": "oyy`AgtzjSMAODMPK|AHH^B`CBfDPvABZFxAB\\Dh@AHBDFEJ[ZmCvAsAz@_@PKNBNT^f@dAf@x@HHLBLAh@[TCxCVjAHL@BH?Z]nDIdBGPGnAIj@Ct@SzAGlBEVEJIDI@q@EKICKJkA@]TqBJmBHi@@g@ZsEHg@Bq@FQNGF?n@FHF@TC`@K|@K|AE\\K~AETEx@Iv@?ZWfC?\\I|@ELOFi@CSGGWd@{F?]PwADuARaBFgAHe@?SBOA[CGMGmCSWDk@ZM?KIi@eAi@y@MWCM@QBC|@c@p@a@`@[l@W|@i@XUJUKIOAsBGyAMe@@c@GaCEmAIg@C[@c@CCWPaAB_@@qAAyC?CECKHAJ@lBE`A@`ACr@EVBF@?DC@KFs@",
+        "resource_state": 3
+      },
+      "polyline": "oyy`AgtzjSMAODMPK|AHH^B`CBfDPvABZFxAB\\Dh@AHBDFEJ[ZmCvAsAz@_@PKNBNT^f@dAf@x@HHLBLAh@[TCxCVjAHL@BH?Z]nDIdBGPGnAIj@Ct@SzAGlBEVEJIDI@q@EKICKJkA@]TqBJmBHi@@g@ZsEHg@Bq@FQNGF?n@FHF@TC`@K|@K|AE\\K~AETEx@Iv@?ZWfC?\\I|@ELOFi@CSGGWd@{F?]PwADuARaBFgAHe@?SBOA[CGMGmCSWDk@ZM?KIi@eAi@y@MWCM@QBC|@c@p@a@`@[l@W|@i@XUJUKIOAsBGyAMe@@c@GaCEmAIg@C[@c@CCWPaAB_@@qAAyC?CECKHAJ@lBE`A@`ACr@EVBF@?DC@KFs@",
+      "photos": [
+        {
+          "caption": null
+        }
+      ],
+      "start_latlng": [
+        10.786969,
+        106.801485
+      ],
+      "end_latlng": [
+        10.787138,
+        106.801304
+      ]
+    },
+    {
       "id": 16806672314,
       "type": "Run",
       "name": "Morning Run",
@@ -9035,29 +9069,29 @@
   ],
   "stats": {
     "week": {
-      "distance": "3.0",
-      "distanceMeters": 3025.7,
-      "movingTime": "12:28",
-      "movingTimeSeconds": 748,
-      "runCount": 1,
-      "activities": 1
+      "distance": "7.0",
+      "distanceMeters": 7032.6,
+      "movingTime": "39:13",
+      "movingTimeSeconds": 2353,
+      "runCount": 2,
+      "activities": 2
     },
     "month": {
-      "distance": "117.3",
-      "distanceMeters": 117309.2,
-      "movingTime": "11:55:18",
-      "movingTimeSeconds": 42918,
-      "runCount": 18,
-      "activities": 20
+      "distance": "121.3",
+      "distanceMeters": 121316.1,
+      "movingTime": "12:22:03",
+      "movingTimeSeconds": 44523,
+      "runCount": 19,
+      "activities": 21
     },
     "year": {
-      "distance": "1812.2",
-      "distanceMeters": 1812174.7999999993,
-      "movingTime": "217:40:22",
-      "movingTimeSeconds": 783622,
-      "runCount": 235,
-      "activities": 302
+      "distance": "1816.2",
+      "distanceMeters": 1816181.6999999993,
+      "movingTime": "218:07:07",
+      "movingTimeSeconds": 785227,
+      "runCount": 236,
+      "activities": 303
     }
   },
-  "lastUpdated": "2025-12-21T23:23:41.126Z"
+  "lastUpdated": "2025-12-23T04:23:47.550Z"
 }
