@@ -1,0 +1,65 @@
+{
+  "products": [
+    {
+      "id": "binh-so-1",
+      "name": "Bình Số 1",
+      "price": 15000,
+      "originalPrice": null,
+      "shortDescription": "Bình mini nhỏ gọn giúp các bạn giữ tay sạch – tâm an mọi lúc mọi nơi",
+      "shopeeLink": "https://vn.shp.ee/oEDNYNC",
+      "description": "Bình mini hình trái tim với thiết kế nhỏ gọn, tiện lợi mang theo mọi lúc mọi nơi. Sản phẩm được làm từ nhựa trong suốt cao cấp, an toàn cho sức khỏe. Đi kèm carabiner màu sắc để dễ dàng treo vào túi xách, balo hoặc móc chìa khóa. Giúp bạn luôn giữ tay sạch sẽ và tâm an trong mọi hoạt động hàng ngày.",
+      "images": [
+        "/img/products/binh-so-1.png"
+      ],
+      "inStock": true,
+      "isFeatured": false,
+      "category": "Bình Số 1",
+      "specs": {
+        "capacity": "50ml",
+        "material": "Nhựa PET trong suốt",
+        "weight": "30g",
+        "dimensions": "6.5 x 5.5 x 2.5 cm",
+        "color": "Trong suốt, Carabiner hồng/xanh lá"
+      },
+      "features": [
+        "Thiết kế hình trái tim độc đáo, dễ thương",
+        "Kích thước nhỏ gọn, dễ dàng mang theo",
+        "Đi kèm carabiner màu sắc để treo tiện lợi",
+        "Có 2 loại: nắp flip-top và vòi xịt",
+        "Chất liệu nhựa PET an toàn, trong suốt",
+        "Dung tích 50ml phù hợp cho nước rửa tay, nước hoa mini"
+      ]
+    },
+    {
+      "id": "binh-thu-2",
+      "name": "Bình Thứ 2",
+      "price": 20000,
+      "originalPrice": null,
+      "shortDescription": "Bình thể thao cao cấp với thiết kế hiện đại, phù hợp cho mọi hoạt động thể thao",
+      "shopeeLink": "https://vn.shp.ee/MfLKWb7",
+      "description": "Bình Thứ 2 là sản phẩm bình thể thao chất lượng cao với thiết kế hiện đại và tiện lợi. Sản phẩm được làm từ chất liệu nhựa cao cấp, an toàn cho sức khỏe, phù hợp cho các hoạt động thể thao như chạy bộ, đạp xe, gym và các hoạt động ngoài trời khác. Với dung tích lớn hơn, bình giúp bạn luôn đủ nước trong suốt quá trình tập luyện.",
+      "images": [
+        "/img/products/binh-thu-2.png"
+      ],
+      "inStock": true,
+      "isFeatured": true,
+      "category": "Bình Thứ 2",
+      "specs": {
+        "capacity": "750ml",
+        "material": "Nhựa Tritan không chứa BPA",
+        "weight": "150g",
+        "dimensions": "25 x 7 x 7 cm",
+        "color": "Xanh dương, Xanh lá, Đỏ, Đen"
+      },
+      "features": [
+        "Thiết kế hiện đại, gọn nhẹ dễ cầm",
+        "Chất liệu Tritan không chứa BPA, an toàn cho sức khỏe",
+        "Nắp vặn chắc chắn, chống rò rỉ nước",
+        "Dung tích 750ml phù hợp cho hoạt động thể thao",
+        "Dễ dàng vệ sinh, có thể rửa bằng máy rửa chén",
+        "Nhiều màu sắc để lựa chọn"
+      ]
+    }
+  ]
+}
+

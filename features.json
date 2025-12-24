@@ -1,0 +1,39 @@
+{
+  "features": {
+    "productFilter": {
+      "enabled": true,
+      "description": "Bộ lọc sản phẩm theo dung tích và màu sắc"
+    },
+    "productSearch": {
+      "enabled": false,
+      "description": "Tìm kiếm sản phẩm"
+    },
+    "productComparison": {
+      "enabled": false,
+      "description": "So sánh sản phẩm"
+    },
+    "wishlist": {
+      "enabled": false,
+      "description": "Danh sách yêu thích"
+    },
+    "productReviews": {
+      "enabled": false,
+      "description": "Đánh giá sản phẩm"
+    },
+    "socialSharing": {
+      "enabled": true,
+      "description": "Chia sẻ sản phẩm lên mạng xã hội"
+    },
+    "relatedProducts": {
+      "enabled": true,
+      "description": "Hiển thị sản phẩm liên quan"
+    },
+    "featuredProducts": {
+      "enabled": true,
+      "description": "Hiển thị sản phẩm nổi bật"
+    }
+  },
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-27"
+}
+
