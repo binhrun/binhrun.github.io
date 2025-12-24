@@ -11,7 +11,7 @@
       "images": [
         "/img/products/binh-so-1.png"
       ],
-      "inStock": false,
+      "inStock": true,
       "isFeatured": true,
       "category": "Bình Số 1",
       "specs": {
