@@ -11,8 +11,8 @@
       "images": [
         "/img/products/binh-so-1.png"
       ],
-      "inStock": true,
-      "isFeatured": false,
+      "inStock": false,
+      "isFeatured": true,
       "category": "Bình Số 1",
       "specs": {
         "capacity": "50ml",
@@ -35,7 +35,7 @@
       "name": "Bình Thứ 2",
       "price": 20000,
       "originalPrice": null,
-      "shortDescription": "Bình thể thao cao cấp với thiết kế hiện đại, phù hợp cho mọi hoạt động thể thao",
+      "shortDescription": "Bình Xịt Mini 60ml – Có Móc Khóa - Nhỏ Xinh, Luôn Bên Bạn",
       "shopeeLink": "https://vn.shp.ee/MfLKWb7",
       "description": "Bình Thứ 2 là sản phẩm bình thể thao chất lượng cao với thiết kế hiện đại và tiện lợi. Sản phẩm được làm từ chất liệu nhựa cao cấp, an toàn cho sức khỏe, phù hợp cho các hoạt động thể thao như chạy bộ, đạp xe, gym và các hoạt động ngoài trời khác. Với dung tích lớn hơn, bình giúp bạn luôn đủ nước trong suốt quá trình tập luyện.",
       "images": [
