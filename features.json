@@ -1,0 +1,59 @@
+{
+  "features": {
+    "productFilter": {
+      "enabled": true,
+      "description": "Bộ lọc sản phẩm theo dung tích và màu sắc"
+    },
+    "productSearch": {
+      "enabled": false,
+      "description": "Tìm kiếm sản phẩm"
+    },
+    "productComparison": {
+      "enabled": false,
+      "description": "So sánh sản phẩm"
+    },
+    "wishlist": {
+      "enabled": false,
+      "description": "Danh sách yêu thích"
+    },
+    "productReviews": {
+      "enabled": false,
+      "description": "Đánh giá sản phẩm"
+    },
+    "socialSharing": {
+      "enabled": true,
+      "description": "Chia sẻ sản phẩm lên mạng xã hội"
+    },
+    "relatedProducts": {
+      "enabled": true,
+      "description": "Hiển thị sản phẩm liên quan"
+    },
+    "featuredProducts": {
+      "enabled": true,
+      "description": "Hiển thị sản phẩm nổi bật"
+    },
+    "viewAllProductsButton": {
+      "enabled": false,
+      "description": "Hiển thị nút xem tất cả sản phẩm trên trang chủ và footer"
+    },
+    "navbarProductsLink": {
+      "enabled": false,
+      "description": "Hiển thị link Sản phẩm trong navbar"
+    },
+    "footerSportsLink": {
+      "enabled": false,
+      "description": "Hiển thị link Bình thể thao trong footer"
+    },
+    "productTypesSection": {
+      "enabled": false,
+      "description": "Hiển thị section Các loại Bình trên trang chủ"
+    },
+    "homepageHeader": {
+      "enabled": false,
+      "description": "Hiển thị hero banner trên trang chủ"
+    }
+  },
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-27"
+}
+
