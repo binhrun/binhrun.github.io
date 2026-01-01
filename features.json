@@ -49,7 +49,7 @@
       "description": "Hiển thị section Các loại Bình trên trang chủ"
     },
     "homepageHeader": {
-      "enabled": true,
+      "enabled": false,
       "description": "Hiển thị hero banner trên trang chủ"
     }
   },

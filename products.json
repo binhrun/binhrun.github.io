@@ -12,7 +12,7 @@
         "/img/products/binh-so-1.png"
       ],
       "inStock": true,
-      "isFeatured": true,
+      "isFeatured": false,
       "category": "Bình Số 1",
       "specs": {
         "capacity": "50ml",
