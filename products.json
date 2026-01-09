@@ -3,16 +3,16 @@
     {
       "id": "binh-so-1",
       "name": "Bình Số 1",
-      "price": 15000,
+      "price": 0,
       "originalPrice": null,
       "shortDescription": "Bình mini nhỏ gọn giúp các bạn giữ tay sạch – tâm an mọi lúc mọi nơi",
       "shopeeLink": "https://vn.shp.ee/oEDNYNC",
       "description": "Bình mini hình trái tim với thiết kế nhỏ gọn, tiện lợi mang theo mọi lúc mọi nơi. Sản phẩm được làm từ nhựa trong suốt cao cấp, an toàn cho sức khỏe. Đi kèm carabiner màu sắc để dễ dàng treo vào túi xách, balo hoặc móc chìa khóa. Giúp bạn luôn giữ tay sạch sẽ và tâm an trong mọi hoạt động hàng ngày.",
       "images": [
-        "/img/products/binh-so-1.png"
+        "/img/products/binh-so-1.jpg"
       ],
       "inStock": true,
-      "isFeatured": false,
+      "isFeatured": true,
       "category": "Bình Số 1",
       "specs": {
         "capacity": "50ml",
@@ -33,7 +33,7 @@
     {
       "id": "binh-thu-2",
       "name": "Bình Thứ 2",
-      "price": 20000,
+      "price": 0,
       "originalPrice": null,
       "shortDescription": "Bình Xịt Mini 60ml – Có Móc Khóa - Nhỏ Xinh, Luôn Bên Bạn",
       "shopeeLink": "https://vn.shp.ee/MfLKWb7",
