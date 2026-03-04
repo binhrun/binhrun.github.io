@@ -4,8 +4,8 @@
   <ShortName>Binh.run - Bình thể thao</ShortName>
   <Description>Search Binh.run - Bình thể thao</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://infinitered.github.io/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://infinitered.github.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://infinitered.github.io/opensearch.xml" />
-  <moz:SearchForm>https://infinitered.github.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://www.binh.run/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://www.binh.run/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://www.binh.run/opensearch.xml" />
+  <moz:SearchForm>https://www.binh.run/</moz:SearchForm>
 </OpenSearchDescription>
