@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://www.binh.run/blog</id>
+    <id>https://binh.run/blog</id>
     <title>Binh.run - Bình thể thao Blog</title>
     <updated>2025-12-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://www.binh.run/blog"/>
+    <link rel="alternate" href="https://binh.run/blog"/>
     <subtitle>Binh.run - Bình thể thao Blog</subtitle>
-    <icon>https://www.binh.run/img/favicon.ico</icon>
+    <icon>https://binh.run/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Sample Blog Post]]></title>
-        <id>https://www.binh.run/blog/sample-post</id>
-        <link href="https://www.binh.run/blog/sample-post"/>
+        <id>https://binh.run/blog/sample-post</id>
+        <link href="https://binh.run/blog/sample-post"/>
         <updated>2025-12-12T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Placeholder blog entry; replace with real update before publishing.]]></summary>
         <content type="html"><![CDATA[<p>Welcome to the blog! Replace this sample post with your update. Use Markdown headings, code blocks, and images from <code>static/</code> as needed.</p>]]></content>
