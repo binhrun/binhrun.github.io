@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Binh.run - Bình thể thao Blog</title>
-        <link>https://binh.run/blog</link>
+        <link>https://shop.binh.run/blog</link>
         <description>Binh.run - Bình thể thao Blog</description>
         <lastBuildDate>Fri, 12 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Sample Blog Post]]></title>
-            <link>https://binh.run/blog/sample-post</link>
-            <guid>https://binh.run/blog/sample-post</guid>
+            <link>https://shop.binh.run/blog/sample-post</link>
+            <guid>https://shop.binh.run/blog/sample-post</guid>
             <pubDate>Fri, 12 Dec 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Placeholder blog entry; replace with real update before publishing.]]></description>
             <content:encoded><![CDATA[<p>Welcome to the blog! Replace this sample post with your update. Use Markdown headings, code blocks, and images from <code>static/</code> as needed.</p>]]></content:encoded>
